@@ -1,0 +1,3176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Корзина</title>
+      <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/fonts/fonts.css">
+  <link rel="stylesheet" type="text/css" href="vendor/slick.css">
+  <link rel="stylesheet" type="text/css" href="vendor/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="vendor/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap-datetimepicker.min.css">
+
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+
+
+  </head>
+
+  <body>
+    <div class="hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow-slider" viewBox="0 0 12 24">
+<path d="M1.33312 24L12 12L1.33312 0L0 1.49974L9.33375 12L0 22.5003L1.33312 24Z" fill="currentColor"/>
+</symbol><symbol id="icon-arrow" viewBox="0 0 48 25">
+<path d="M1 0.5L24 23.5L47 0.5" stroke="currentColor" fill="none"/>
+</symbol><symbol id="icon-avatar" viewBox="0 0 21 21">
+<path d="M10.3333 12.6667C15.856 12.6667 20.3333 14.7561 20.3333 17.3334V20.6667H0.333313V17.3334C0.333313 14.7561 4.81065 12.6667 10.3333 12.6667ZM19 17.3334C19 15.4934 15.12 14.0001 10.3333 14.0001C5.54665 14.0001 1.66665 15.4934 1.66665 17.3334V19.3334H19V17.3334ZM10.3333 0.666748C11.571 0.666748 12.758 1.15841 13.6331 2.03358C14.5083 2.90875 15 4.09574 15 5.33342C15 6.57109 14.5083 7.75808 13.6331 8.63325C12.758 9.50842 11.571 10.0001 10.3333 10.0001C9.09564 10.0001 7.90865 9.50842 7.03348 8.63325C6.15831 7.75808 5.66665 6.57109 5.66665 5.33342C5.66665 4.09574 6.15831 2.90875 7.03348 2.03358C7.90865 1.15841 9.09564 0.666748 10.3333 0.666748ZM10.3333 2.00008C9.44926 2.00008 8.60141 2.35127 7.97629 2.97639C7.35117 3.60151 6.99998 4.44936 6.99998 5.33342C6.99998 6.21747 7.35117 7.06532 7.97629 7.69044C8.60141 8.31556 9.44926 8.66675 10.3333 8.66675C11.2174 8.66675 12.0652 8.31556 12.6903 7.69044C13.3155 7.06532 13.6666 6.21747 13.6666 5.33342C13.6666 4.44936 13.3155 3.60151 12.6903 2.97639C12.0652 2.35127 11.2174 2.00008 10.3333 2.00008Z" fill="currentColor"/>
+</symbol><symbol id="icon-basket" viewBox="0 0 26 26">
+<path d="M20.3334 20C21.0406 20 21.7189 20.281 22.219 20.781C22.7191 21.2811 23 21.9594 23 22.6667C23 23.3739 22.7191 24.0522 22.219 24.5523C21.7189 25.0524 21.0406 25.3333 20.3334 25.3333C19.6261 25.3333 18.9479 25.0524 18.4478 24.5523C17.9477 24.0522 17.6667 23.3739 17.6667 22.6667C17.6667 21.9594 17.9477 21.2811 18.4478 20.781C18.9479 20.281 19.6261 20 20.3334 20ZM20.3334 21.3333C19.9798 21.3333 19.6406 21.4738 19.3906 21.7239C19.1405 21.9739 19 22.313 19 22.6667C19 23.0203 19.1405 23.3594 19.3906 23.6095C19.6406 23.8595 19.9798 24 20.3334 24C20.687 24 21.0261 23.8595 21.2762 23.6095C21.5262 23.3594 21.6667 23.0203 21.6667 22.6667C21.6667 22.313 21.5262 21.9739 21.2762 21.7239C21.0261 21.4738 20.687 21.3333 20.3334 21.3333ZM8.33337 20C9.04062 20 9.71889 20.281 10.219 20.781C10.7191 21.2811 11 21.9594 11 22.6667C11 23.3739 10.7191 24.0522 10.219 24.5523C9.71889 25.0524 9.04062 25.3333 8.33337 25.3333C7.62613 25.3333 6.94785 25.0524 6.44776 24.5523C5.94766 24.0522 5.66671 23.3739 5.66671 22.6667C5.66671 21.9594 5.94766 21.2811 6.44776 20.781C6.94785 20.281 7.62613 20 8.33337 20ZM8.33337 21.3333C7.97975 21.3333 7.64061 21.4738 7.39056 21.7239C7.14052 21.9739 7.00004 22.313 7.00004 22.6667C7.00004 23.0203 7.14052 23.3594 7.39056 23.6095C7.64061 23.8595 7.97975 24 8.33337 24C8.687 24 9.02613 23.8595 9.27618 23.6095C9.52623 23.3594 9.66671 23.0203 9.66671 22.6667C9.66671 22.313 9.52623 21.9739 9.27618 21.7239C9.02613 21.4738 8.687 21.3333 8.33337 21.3333ZM23 4H4.69737L8.09337 12H19C19.2074 12.0003 19.4119 11.952 19.5971 11.8589C19.7824 11.7658 19.9432 11.6305 20.0667 11.464L24.0667 6.13067H24.068C24.2159 5.93248 24.3058 5.69707 24.3275 5.45075C24.3493 5.20443 24.3022 4.95692 24.1914 4.73586C24.0805 4.51479 23.9104 4.3289 23.7001 4.19896C23.4897 4.06901 23.2473 4.00012 23 4ZM19 13.3333H8.15471L7.13337 15.4133L7.00004 16C7.00004 16.3536 7.14052 16.6928 7.39056 16.9428C7.64061 17.1929 7.97975 17.3333 8.33337 17.3333H23V18.6667H8.33337C7.86906 18.6669 7.41274 18.5459 7.00955 18.3156C6.60637 18.0853 6.27029 17.7538 6.03458 17.3537C5.79887 16.9537 5.6717 16.4991 5.66564 16.0348C5.65958 15.5705 5.77485 15.1127 6.00004 14.7067L6.96004 12.7413L2.11737 1.33333H0.333374V0H3.00004L4.13204 2.66667H23C23.5039 2.66671 23.9974 2.8095 24.4234 3.07847C24.8494 3.34745 25.1905 3.73161 25.4072 4.18647C25.6239 4.64133 25.7073 5.14827 25.6478 5.64857C25.5882 6.14887 25.3881 6.62206 25.0707 7.01333L21.1854 12.1947C20.9397 12.5464 20.6128 12.8336 20.2323 13.0319C19.8518 13.2301 19.4291 13.3335 19 13.3333Z" fill="currentColor"/>
+</symbol><symbol id="icon-cancel" viewBox="0 0 15 19">
+<path d="M14 16C14 16.7956 13.6839 17.5587 13.1213 18.1213C12.5587 18.6839 11.7956 19 11 19H4C3.20435 19 2.44129 18.6839 1.87868 18.1213C1.31607 17.5587 1 16.7956 1 16V4H0V1H4.5L5.5 0H9.5L10.5 1H15V4H14V16ZM2 4V16C2 16.5304 2.21071 17.0391 2.58579 17.4142C2.96086 17.7893 3.46957 18 4 18H11C11.5304 18 12.0391 17.7893 12.4142 17.4142C12.7893 17.0391 13 16.5304 13 16V4H2ZM14 3V2H10L9 1H6L5 2H1V3H14ZM4 6H5V16H4V6ZM10 6H11V16H10V6Z" fill="currentColor"/>
+</symbol><symbol id="icon-check" viewBox="0 0 15 11">
+<path d="M14.9 1.09994L5 10.9999L0.0500031 6.04994L0.757003 5.34294L5 9.58595L14.192 0.392944L14.899 1.10094L14.9 1.09994Z" fill="currentColor"/>
+</symbol><symbol id="icon-chevron-left" viewBox="0 0 6 12">
+<path d="M5.33344 12L0 6L5.33344 0L6 0.749868L1.33312 6L6 11.2501L5.33344 12Z" fill="currentColor"/>
+</symbol><symbol id="icon-chevron" viewBox="0 0 6 12">
+<path d="M0.666562 12L6 6L0.666562 0L0 0.749868L4.66688 6L0 11.2501L0.666562 12Z" fill="currentColor"/>
+</symbol><symbol id="icon-close" viewBox="0 0 23 26">
+<path d="M22.3819 2.1987L21.1243 0.756697C20.9892 0.601817 20.7689 0.601062 20.6346 0.755019L0.616703 23.7086C0.482436 23.8626 0.483094 24.1152 0.618166 24.2701L1.87574 25.7121C2.01081 25.867 2.23118 25.8678 2.36544 25.7138L22.3833 2.76022C22.5176 2.60626 22.517 2.35358 22.3819 2.1987Z" fill="currentColor"/>
+<path d="M21.1243 25.7124L22.3819 24.2704C22.5169 24.1155 22.5176 23.8628 22.3833 23.7088L2.36542 0.755276C2.23116 0.60132 2.01079 0.602075 1.87572 0.756955L0.618146 2.19895C0.483075 2.35383 0.482415 2.60652 0.616681 2.76048L20.6346 25.714C20.7688 25.868 20.9892 25.8672 21.1243 25.7124Z" fill="currentColor"/>
+</symbol><symbol id="icon-delete" viewBox="0 0 48 48">
+<path d="M12 12L36 36" stroke="currentColor" stroke-width="2" fill="none"/>
+<path d="M12 36L36 12" stroke="currentColor" stroke-width="2" fill="none"/>
+</symbol><symbol id="icon-facebook" viewBox="0 0 20 20">
+<path d="M19.6875 10C19.6875 4.64844 15.3516 0.3125 10 0.3125C4.64844 0.3125 0.3125 4.64844 0.3125 10C0.3125 14.8352 3.85508 18.843 8.48633 19.5703V12.8004H6.02539V10H8.48633V7.86562C8.48633 5.43789 9.93164 4.09687 12.1453 4.09687C13.2055 4.09687 14.3141 4.28594 14.3141 4.28594V6.66875H13.0922C11.8891 6.66875 11.5137 7.41562 11.5137 8.18164V10H14.2004L13.7707 12.8004H11.5137V19.5703C16.1449 18.843 19.6875 14.8352 19.6875 10Z" fill="currentColor"/>
+</symbol><symbol id="icon-heart" viewBox="0 0 26 23">
+<path d="M3.65863 11.3359C3.0875 10.7646 2.64511 10.0778 2.36112 9.32158C2.07714 8.56533 1.95813 7.7571 2.01207 6.9511C2.06601 6.14509 2.29166 5.35993 2.67388 4.64827C3.0561 3.9366 3.58606 3.31488 4.22822 2.8248C4.87038 2.33471 5.60991 1.98759 6.3972 1.80671C7.1845 1.62582 8.00138 1.61535 8.79305 1.77601C9.58472 1.93666 10.3329 2.26472 10.9874 2.73819C11.6419 3.21166 12.1876 3.81959 12.588 4.52123H14.0786C14.479 3.81959 15.0247 3.21166 15.6792 2.73819C16.3337 2.26472 17.0819 1.93666 17.8735 1.77601C18.6652 1.61535 19.4821 1.62582 20.2694 1.80671C21.0567 1.98759 21.7962 2.33471 22.4384 2.8248C23.0805 3.31488 23.6105 3.9366 23.9927 4.64827C24.3749 5.35993 24.6006 6.14509 24.6545 6.9511C24.7085 7.7571 24.5895 8.56533 24.3055 9.32158C24.0215 10.0778 23.5791 10.7646 23.008 11.3359L13.3333 21.0132L3.65863 11.3372V11.3359ZM23.9493 12.2826C24.6321 11.5997 25.1663 10.7828 25.5182 9.8835C25.8701 8.98415 26.032 8.02172 25.9939 7.05674C25.9558 6.09175 25.7184 5.1451 25.2967 4.2763C24.875 3.40751 24.2781 2.63537 23.5435 2.00845C22.8089 1.38154 21.9525 0.9134 21.0283 0.633488C20.104 0.353577 19.1318 0.267946 18.1728 0.38198C17.2138 0.496014 16.2888 0.807245 15.4559 1.2961C14.6231 1.78496 13.9004 2.44086 13.3333 3.22256C12.7662 2.44086 12.0435 1.78496 11.2106 1.2961C10.3778 0.807245 9.45278 0.496014 8.4938 0.38198C7.53482 0.267946 6.56262 0.353577 5.63834 0.633488C4.71406 0.9134 3.85769 1.38154 3.12311 2.00845C2.38852 2.63537 1.7916 3.40751 1.36989 4.2763C0.948182 5.1451 0.710806 6.09175 0.672691 7.05674C0.634576 8.02172 0.796547 8.98415 1.14842 9.8835C1.50029 10.7828 2.03445 11.5997 2.7173 12.2826L13.3333 22.8972L23.9493 12.2839V12.2826Z" fill="currentColor"/>
+</symbol><symbol id="icon-help" viewBox="0 0 20 20">
+<path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM11 15H9V9H11V15ZM11 7H9V5H11V7Z" fill="currentColor"/>
+</symbol><symbol id="icon-instagram" viewBox="0 0 20 20">
+<path d="M10 6.87579C8.27968 6.87579 6.87577 8.2797 6.87577 10C6.87577 11.7203 8.27968 13.1242 10 13.1242C11.7203 13.1242 13.1242 11.7203 13.1242 10C13.1242 8.2797 11.7203 6.87579 10 6.87579ZM19.3703 10C19.3703 8.70626 19.382 7.42423 19.3094 6.13283C19.2367 4.63283 18.8945 3.30158 17.7977 2.2047C16.6984 1.10548 15.3695 0.765639 13.8695 0.692982C12.5758 0.620326 11.2937 0.632045 10.0023 0.632045C8.70859 0.632045 7.42656 0.620326 6.13515 0.692982C4.63515 0.765639 3.3039 1.10783 2.20702 2.2047C1.1078 3.30392 0.767958 4.63283 0.695302 6.13283C0.622645 7.42658 0.634364 8.70861 0.634364 10C0.634364 11.2914 0.622645 12.5758 0.695302 13.8672C0.767958 15.3672 1.11015 16.6985 2.20702 17.7953C3.30624 18.8945 4.63515 19.2344 6.13515 19.307C7.4289 19.3797 8.71093 19.368 10.0023 19.368C11.2961 19.368 12.5781 19.3797 13.8695 19.307C15.3695 19.2344 16.7008 18.8922 17.7977 17.7953C18.8969 16.6961 19.2367 15.3672 19.3094 13.8672C19.3844 12.5758 19.3703 11.2938 19.3703 10ZM10 14.807C7.33984 14.807 5.19296 12.6602 5.19296 10C5.19296 7.33986 7.33984 5.19298 10 5.19298C12.6602 5.19298 14.807 7.33986 14.807 10C14.807 12.6602 12.6602 14.807 10 14.807ZM15.0039 6.11876C14.3828 6.11876 13.8812 5.6172 13.8812 4.99611C13.8812 4.37501 14.3828 3.87345 15.0039 3.87345C15.625 3.87345 16.1266 4.37501 16.1266 4.99611C16.1267 5.14359 16.0978 5.28966 16.0415 5.42595C15.9851 5.56224 15.9024 5.68607 15.7982 5.79036C15.6939 5.89464 15.57 5.97733 15.4337 6.03368C15.2975 6.09004 15.1514 6.11895 15.0039 6.11876Z" fill="currentColor"/>
+</symbol><symbol id="icon-loupe" viewBox="0 0 20 20">
+<path d="M12.9296 8.383H10.164V5.24237C10.164 5.13925 10.0796 5.05487 9.97651 5.05487H8.57026C8.46713 5.05487 8.38276 5.13925 8.38276 5.24237V8.383H5.61713C5.514 8.383 5.42963 8.46737 5.42963 8.5705V9.97675C5.42963 10.0799 5.514 10.1642 5.61713 10.1642H8.38276V13.3049C8.38276 13.408 8.46713 13.4924 8.57026 13.4924H9.97651C10.0796 13.4924 10.164 13.408 10.164 13.3049V10.1642H12.9296C13.0328 10.1642 13.1171 10.0799 13.1171 9.97675V8.5705C13.1171 8.46737 13.0328 8.383 12.9296 8.383ZM19.5859 18.3205L16.164 14.8986C19.0257 11.4088 18.8265 6.23847 15.5546 2.96894C12.0859 -0.502158 6.4515 -0.502158 2.96869 2.96894C-0.502402 6.45175 -0.502402 12.0861 2.96869 15.5549C6.23822 18.8267 11.4085 19.026 14.8984 16.1642L18.3203 19.5861C18.3953 19.6517 18.5148 19.6517 18.5781 19.5861L19.5859 18.5783C19.6515 18.515 19.6515 18.3955 19.5859 18.3205ZM14.3124 14.3127C11.5281 17.0947 7.01869 17.0947 4.23432 14.3127C1.45229 11.5283 1.45229 7.01894 4.23432 4.23456C7.01869 1.45253 11.5281 1.45253 14.3124 4.23456C17.0945 7.01894 17.0945 11.5283 14.3124 14.3127Z" fill="currentColor"/>
+</symbol><symbol id="icon-map" viewBox="0 0 13 20">
+<path d="M6.49998 3.99991C7.16302 3.99991 7.7989 4.2633 8.26774 4.73214C8.73658 5.20098 8.99998 5.83687 8.99998 6.49991C8.99998 7.16295 8.73658 7.79883 8.26774 8.26768C7.7989 8.73652 7.16302 8.99991 6.49998 8.99991C5.83694 8.99991 5.20105 8.73652 4.73221 8.26768C4.26337 7.79883 3.99998 7.16295 3.99998 6.49991C3.99998 5.83687 4.26337 5.20098 4.73221 4.73214C5.20105 4.2633 5.83694 3.99991 6.49998 3.99991ZM6.49998 4.99991C6.10215 4.99991 5.72062 5.15794 5.43932 5.43925C5.15801 5.72055 4.99998 6.10208 4.99998 6.49991C4.99998 6.89773 5.15801 7.27926 5.43932 7.56057C5.72062 7.84187 6.10215 7.99991 6.49998 7.99991C6.8978 7.99991 7.27933 7.84187 7.56064 7.56057C7.84194 7.27926 7.99998 6.89773 7.99998 6.49991C7.99998 6.10208 7.84194 5.72055 7.56064 5.43925C7.27933 5.15794 6.8978 4.99991 6.49998 4.99991ZM1.79998 9.35691L6.49998 17.0869L11.2 9.35691C11.7069 8.52291 11.9827 7.56905 11.9992 6.59324C12.0157 5.61742 11.7722 4.65479 11.2938 3.80415C10.8154 2.95351 10.1192 2.24549 9.27675 1.75276C8.43431 1.26003 7.47593 1.00034 6.49998 1.00034C5.52402 1.00034 4.56564 1.26003 3.7232 1.75276C2.88076 2.24549 2.1846 2.95351 1.70617 3.80415C1.22774 4.65479 0.984277 5.61742 1.00076 6.59324C1.01725 7.56905 1.29309 8.52291 1.79998 9.35691ZM12.054 9.87691L6.49998 19.0119L0.945977 9.87691C0.347098 8.89126 0.0212575 7.76401 0.00189306 6.61085C-0.0174714 5.45768 0.270337 4.32013 0.835784 3.31492C1.40123 2.30972 2.22395 1.47307 3.21952 0.890822C4.21509 0.308577 5.34765 0.00170898 6.50098 0.00170898C7.6543 0.00170898 8.78687 0.308577 9.78243 0.890822C10.778 1.47307 11.6007 2.30972 12.1662 3.31492C12.7316 4.32013 13.0194 5.45768 13.0001 6.61085C12.9807 7.76401 12.6549 8.89126 12.056 9.87691H12.054Z" fill="currentColor"/>
+</symbol><symbol id="icon-phone" viewBox="0 0 19 19">
+<path d="M17.5 19C18.327 19 19 18.327 19 17.5V14C19 13.173 18.327 12.5 17.5 12.5C16.33 12.5 15.18 12.316 14.08 11.953C13.8171 11.87 13.5365 11.8599 13.2683 11.9238C13.0001 11.9877 12.7542 12.1233 12.557 12.316L11.117 13.756C8.62811 12.4048 6.58403 10.3614 5.232 7.873L6.66 6.436C7.072 6.054 7.22 5.473 7.044 4.914C6.68174 3.8123 6.49808 2.65973 6.5 1.5C6.5 0.673 5.827 0 5 0H1.5C0.673 0 0 0.673 0 1.5C0 11.15 7.85 19 17.5 19Z" fill="currentColor"/>
+</symbol><symbol id="icon-photo" viewBox="0 0 20 19">
+<path d="M7 0.401031L5.17 2.39455H2C0.9 2.39455 0 3.29163 0 4.38806V16.3491C0 17.4456 0.9 18.3427 2 18.3427H18C19.1 18.3427 20 17.4456 20 16.3491V4.38806C20 3.29163 19.1 2.39455 18 2.39455H14.83L13 0.401031H7ZM10 15.3524C7.24 15.3524 5 13.1196 5 10.3686C5 7.61755 7.24 5.38482 10 5.38482C12.76 5.38482 15 7.61755 15 10.3686C15 13.1196 12.76 15.3524 10 15.3524Z" fill="currentColor"/>
+</symbol><symbol id="icon-play" viewBox="0 0 82 82">
+<circle cx="41" cy="41" r="40.5" stroke="currentColor" fill="none"/>
+<path d="M48 41.5L36 33V50L48 41.5Z" fill="currentColor"/>
+</symbol><symbol id="icon-property" viewBox="0 0 18 15">
+<path d="M18 13V14H5V13H18ZM1.5 12.5C1.76522 12.5 2.01957 12.6054 2.20711 12.7929C2.39464 12.9804 2.5 13.2348 2.5 13.5C2.5 13.7652 2.39464 14.0196 2.20711 14.2071C2.01957 14.3946 1.76522 14.5 1.5 14.5C1.23478 14.5 0.98043 14.3946 0.792893 14.2071C0.605357 14.0196 0.5 13.7652 0.5 13.5C0.5 13.2348 0.605357 12.9804 0.792893 12.7929C0.98043 12.6054 1.23478 12.5 1.5 12.5ZM18 7V8H5V7H18ZM1.5 6.5C1.76522 6.5 2.01957 6.60536 2.20711 6.79289C2.39464 6.98043 2.5 7.23478 2.5 7.5C2.5 7.76522 2.39464 8.01957 2.20711 8.20711C2.01957 8.39464 1.76522 8.5 1.5 8.5C1.23478 8.5 0.98043 8.39464 0.792893 8.20711C0.605357 8.01957 0.5 7.76522 0.5 7.5C0.5 7.23478 0.605357 6.98043 0.792893 6.79289C0.98043 6.60536 1.23478 6.5 1.5 6.5ZM18 1V2H5V1H18ZM1.5 0.5C1.76522 0.5 2.01957 0.605357 2.20711 0.792893C2.39464 0.98043 2.5 1.23478 2.5 1.5C2.5 1.76522 2.39464 2.01957 2.20711 2.20711C2.01957 2.39464 1.76522 2.5 1.5 2.5C1.23478 2.5 0.98043 2.39464 0.792893 2.20711C0.605357 2.01957 0.5 1.76522 0.5 1.5C0.5 1.23478 0.605357 0.98043 0.792893 0.792893C0.98043 0.605357 1.23478 0.5 1.5 0.5Z" fill="currentColor"/>
+</symbol><symbol id="icon-search" viewBox="0 0 23 24">
+<path d="M8.66673 0.333252C10.3248 0.333216 11.9481 0.80881 13.344 1.70361C14.7399 2.5984 15.8498 3.87484 16.5421 5.38149C17.2343 6.88813 17.4799 8.56173 17.2496 10.2037C17.0193 11.8457 16.3228 13.3872 15.2427 14.6453L22.7681 22.1706L21.8254 23.1133L14.2987 15.5866C13.2372 16.4943 11.972 17.1321 10.611 17.4455C9.24987 17.759 7.83319 17.7388 6.48157 17.3868C5.12995 17.0347 3.88344 16.3612 2.8482 15.4236C1.81297 14.486 1.01967 13.3121 0.535889 12.0018C0.0521029 10.6916 -0.107842 9.2838 0.0696747 7.89842C0.247192 6.51303 0.756912 5.19107 1.55542 4.04512C2.35394 2.89918 3.41758 1.9632 4.65577 1.3169C5.89396 0.670609 7.27001 0.333145 8.66673 0.333252ZM8.66673 1.66659C6.7218 1.66659 4.85654 2.4392 3.48128 3.81447C2.10601 5.18974 1.33339 7.055 1.33339 8.99992C1.33339 10.9448 2.10601 12.8101 3.48128 14.1854C4.85654 15.5606 6.7218 16.3333 8.66673 16.3333C10.6116 16.3333 12.4769 15.5606 13.8522 14.1854C15.2274 12.8101 16.0001 10.9448 16.0001 8.99992C16.0001 7.055 15.2274 5.18974 13.8522 3.81447C12.4769 2.4392 10.6116 1.66659 8.66673 1.66659Z" fill="currentColor"/>
+</symbol><symbol id="icon-star" viewBox="0 0 20 20">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.9622 7.14211C19.8622 6.83495 19.5907 6.6362 19.2706 6.6362L12.7288 6.61964L10.666 0.498953C10.5631 0.193296 10.2938 -0.0122328 9.96851 0.000565704C9.64847 0.00432996 9.37841 0.204588 9.28217 0.512505L7.35073 6.61964L0.729801 6.6362C0.409759 6.6362 0.138207 6.83495 0.0382407 7.14136C-0.062472 7.44852 0.0397328 7.7715 0.297856 7.96272L5.47896 11.8181L3.44681 18.2979C3.34982 18.6058 3.45427 18.9265 3.71388 19.1162C3.84443 19.2111 3.99364 19.2593 4.14284 19.2593C4.29055 19.2593 4.43752 19.2126 4.56509 19.12L10.0274 15.2353L15.4353 19.117C15.6927 19.3067 16.0299 19.3059 16.2888 19.1162C16.5484 18.9273 16.6529 18.6065 16.5566 18.2986L14.5215 11.8181L19.7018 7.96348C19.96 7.7715 20.0622 7.44853 19.9622 7.14211Z" fill="currentColor"/>
+</symbol><symbol id="icon-telegram" viewBox="0 0 28 24">
+<path d="M25.5533 0.955943L1.91332 10.0719C0.299984 10.7199 0.309317 11.6199 1.61732 12.0213L7.68665 13.9146L21.7293 5.05461C22.3933 4.65061 23 4.86794 22.5013 5.31061L11.124 15.5786H11.1213L11.124 15.5799L10.7053 21.8359C11.3187 21.8359 11.5893 21.5546 11.9333 21.2226L14.8813 18.3559L21.0133 22.8853C22.144 23.5079 22.956 23.1879 23.2373 21.8386L27.2627 2.86794C27.6747 1.21594 26.632 0.467943 25.5533 0.955943Z" fill="currentColor"/>
+</symbol><symbol id="icon-whatsapp" viewBox="0 0 19 19">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.403 2.63303C14.5714 1.79591 13.5819 1.13214 12.4919 0.680178C11.4019 0.22821 10.233 -0.00297023 9.053 2.88091e-05C4.105 2.88091e-05 0.077 4.02703 0.075 8.97703C0.075 10.559 0.488 12.103 1.273 13.465L0 18.116L4.759 16.867C6.07539 17.5836 7.5502 17.9594 9.049 17.96H9.053C14 17.96 18.028 13.933 18.03 8.98303C18.0334 7.80351 17.803 6.63502 17.3521 5.54509C16.9012 4.45516 16.2387 3.4654 15.403 2.63303ZM9.053 16.445H9.05C7.71352 16.4452 6.40163 16.0856 5.252 15.404L4.98 15.242L2.156 15.983L2.909 13.23L2.732 12.948C1.98479 11.7585 1.58923 10.3818 1.591 8.97703C1.593 4.86303 4.94 1.51603 9.056 1.51603C10.0363 1.51385 11.0072 1.70611 11.9127 2.08168C12.8181 2.45725 13.6401 3.00867 14.331 3.70403C15.0256 4.39607 15.5762 5.21892 15.9509 6.12503C16.3256 7.03113 16.517 8.00251 16.514 8.98303C16.512 13.097 13.165 16.445 9.053 16.445ZM13.146 10.856C12.921 10.743 11.819 10.201 11.613 10.126C11.408 10.051 11.259 10.014 11.109 10.238C10.959 10.462 10.529 10.967 10.398 11.117C10.267 11.267 10.136 11.285 9.912 11.173C9.688 11.061 8.965 10.824 8.108 10.06C7.441 9.46503 6.991 8.73103 6.86 8.50603C6.729 8.28103 6.846 8.16003 6.959 8.04803C7.06 7.94803 7.183 7.78603 7.295 7.65503C7.407 7.52403 7.444 7.43103 7.519 7.28103C7.594 7.13103 7.557 7.00003 7.5 6.88803C7.444 6.77503 6.995 5.67103 6.808 5.22203C6.627 4.78703 6.442 4.84503 6.304 4.83903C6.16108 4.83318 6.01804 4.83052 5.875 4.83103C5.76126 4.83393 5.64934 4.86029 5.54626 4.90848C5.44318 4.95666 5.35117 5.02562 5.276 5.11103C5.07 5.33603 4.491 5.87803 4.491 6.98203C4.491 8.08603 5.295 9.15303 5.407 9.30303C5.519 9.45303 6.989 11.718 9.239 12.69C9.775 12.921 10.193 13.059 10.518 13.163C11.055 13.334 11.544 13.309 11.931 13.252C12.362 13.188 13.258 12.71 13.445 12.186C13.632 11.662 13.632 11.213 13.576 11.119C13.52 11.025 13.369 10.968 13.146 10.856Z" fill="currentColor"/>
+</symbol><symbol id="icon-youtube" viewBox="0 0 20 16">
+<path d="M19.543 2.498C20 4.28 20 8 20 8C20 8 20 11.72 19.543 13.502C19.289 14.487 18.546 15.262 17.605 15.524C15.896 16 10 16 10 16C10 16 4.107 16 2.395 15.524C1.45 15.258 0.708 14.484 0.457 13.502C2.98023e-08 11.72 0 8 0 8C0 8 2.98023e-08 4.28 0.457 2.498C0.711 1.513 1.454 0.738 2.395 0.476C4.107 -1.78814e-07 10 0 10 0C10 0 15.896 -1.78814e-07 17.605 0.476C18.55 0.742 19.292 1.516 19.543 2.498ZM8 11.5L14 8L8 4.5V11.5Z" fill="currentColor"/>
+</symbol></svg>
+    </div>
+    <div class="wrap-all">
+      <div class="wrap-content">
+        <header class="header js-header">
+  <div class="content">
+    <div class="grid-row grid-row_middle grid-row_between">
+      <div class="grid-col mobile-show">
+        <div class="burger js-catalog-open">
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </div>
+      </div>
+      <div class="grid-col">
+        <a href="/" class="logo">
+          <img src="css/icons/logo.svg" alt="">
+        </a>
+      </div>
+      <div class="grid-col grid-col_full header__menu">
+        <ul class="menu-top">
+          <li class="menu-top__item">
+            <a href="#" class="menu-top__link">Каталог</a>
+          </li>
+          <li class="menu-top__item">
+            <a href="#" class="menu-top__link">Бренды</a>
+          </li>
+          <li class="menu-top__item">
+            <a href="#" class="menu-top__link">Контакты</a>
+          </li>
+          <li class="menu-top__item">
+            <a href="#" class="menu-top__link">Оплата</a>
+          </li>
+          <li class="menu-top__item">
+            <a href="#" class="menu-top__link">Доставка</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="grid-col header__menu-icon">
+        <ul class="menu-icon">
+          <li class="menu-icon__item">
+            <a href="#" class="menu-icon__link">
+              <span class="menu-icon__image menu-icon__image_heart">
+                <svg width="26" height="23" class="svg-icon">
+                  <use xlink:href="#icon-heart"></use>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="menu-icon__item">
+            <div class="header-search js-search">
+              <div class="header-search__wrapper">
+                <div class="menu-icon__link js-search-open">
+                  <div class="menu-icon__image menu-icon__image_search">
+                    <svg width="23" height="24" class="svg-icon">
+                      <use xlink:href="#icon-search"></use>
+                    </svg>
+                  </div>
+                </div>
+                <form class="search">
+                  <div class="search__wrapper">
+                    <button class="search__submit" type="submit">
+                      <svg width="23" height="24" class="svg-icon">
+                        <use xlink:href="#icon-search"></use>
+                      </svg>
+                    </button>
+                    <input type="text" class="input search__input" placeholder="Поиск">
+                    <div class="search__close js-search-close">
+                      <svg width="48" height="48" class="svg-icon">
+                        <use xlink:href="#icon-delete"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </li>
+          <li class="menu-icon__item">
+            <a href="#basket-empty" class="menu-icon__link js-popup-link">
+              <span class="menu-icon__image menu-icon__image_basket">
+                <svg width="26" height="26" class="svg-icon">
+                  <use xlink:href="#icon-basket"></use>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="menu-icon__item">
+            <a href="#" class="menu-icon__link">
+              <span class="menu-icon__image menu-icon__image_avatar">
+                <svg width="21" height="21" class="svg-icon">
+                  <use xlink:href="#icon-avatar"></use>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="menu-icon__item mobile-hidden">
+            <div class="burger js-catalog-open">
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+        <div class="content">
+          <div class="page">
+            <aside class="page__aside">
+              <div class="tablet-hidden">
+                <ul class="menu-aside">
+  <li class="menu-aside__item">
+    <a href="#" class="menu-aside__link menu-aside__link_special">
+      <span class="menu-aside__text">Спецпрограмма</span>
+    </a>
+  </li>
+
+  <li class="menu-aside__item">
+    <a href="#" class="menu-aside__link">
+      <span class="menu-aside__text">Новинки</span>
+    </a>
+  </li>
+
+  <li class="menu-aside__item">
+    <a href="#" class="menu-aside__link">
+      <span class="menu-aside__text">Бестселлеры</span>
+    </a>
+  </li>
+
+  <li class="menu-aside__item">
+    <a href="#" class="menu-aside__link js-aside-link">
+      <span class="menu-aside__text">Для лица</span>
+      <span class="menu-aside__arrow">
+        <svg width="6" height="12" class="svg-icon">
+          <use xlink:href="#icon-chevron"></use>
+        </svg>
+      </span>
+    </a>
+    <div class="menu-aside__sub js-aside-block">
+      <ul class="menu-sub">
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">шампунь</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">кондиционер</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">сухой шампунь</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">уход для волос</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">стайлинг</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">аксессуары</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">окрашивание</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">наборы</a>
+        </li>
+      </ul>
+    </div>
+  </li>
+
+  <li class="menu-aside__item">
+    <a href="#" class="menu-aside__link js-aside-link">
+      <span class="menu-aside__text">Для волос</span>
+      <span class="menu-aside__arrow">
+        <svg width="6" height="12" class="svg-icon">
+          <use xlink:href="#icon-chevron"></use>
+        </svg>
+      </span>
+    </a>
+    <div class="menu-aside__sub js-aside-block">
+      <ul class="menu-sub">
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">шампунь</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">кондиционер</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">сухой шампунь</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">уход для волос</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">стайлинг</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">аксессуары</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">окрашивание</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">наборы</a>
+        </li>
+      </ul>
+    </div>
+  </li>
+
+  <li class="menu-aside__item">
+    <a href="#" class="menu-aside__link js-aside-link">
+      <span class="menu-aside__text">Для тела</span>
+      <span class="menu-aside__arrow">
+        <svg width="6" height="12" class="svg-icon">
+          <use xlink:href="#icon-chevron"></use>
+        </svg>
+      </span>
+    </a>
+    <div class="menu-aside__sub js-aside-block">
+      <ul class="menu-sub">
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">шампунь</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">кондиционер</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">сухой шампунь</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">уход для волос</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">стайлинг</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">аксессуары</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">окрашивание</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">наборы</a>
+        </li>
+      </ul>
+    </div>
+  </li>
+
+  <li class="menu-aside__item">
+    <a href="#" class="menu-aside__link">
+      <span class="menu-aside__text">Для рук и ног</span>
+    </a>
+  </li>
+
+  <li class="menu-aside__item">
+    <a href="#" class="menu-aside__link">
+      <span class="menu-aside__text">Атмосфера</span>
+    </a>
+  </li>
+
+  <li class="menu-aside__item">
+    <a href="#" class="menu-aside__link">
+      <span class="menu-aside__text">Гигиена и здоровье</span>
+    </a>
+  </li>
+</ul>
+
+              </div>
+              <div class="tablet-show">
+                <ul class="menu-aside">
+  <li class="menu-aside__item">
+    <a href="#" class="menu-aside__link menu-aside__link_special">
+      <span class="menu-aside__text">Спецпрограмма</span>
+    </a>
+  </li>
+
+  <li class="menu-aside__item">
+    <a href="#" class="menu-aside__link">
+      <span class="menu-aside__text">Новинки</span>
+    </a>
+  </li>
+
+  <li class="menu-aside__item">
+    <a href="#" class="menu-aside__link">
+      <span class="menu-aside__text">Бестселлеры</span>
+    </a>
+  </li>
+
+  <li class="menu-aside__item">
+    <a href="#sub1" class="menu-aside__link js-popup-link">
+      <span class="menu-aside__text">Для лица</span>
+      <span class="menu-aside__arrow">
+        <svg width="6" height="12" class="svg-icon">
+          <use xlink:href="#icon-chevron"></use>
+        </svg>
+      </span>
+    </a>
+  </li>
+
+  <li class="menu-aside__item">
+    <a href="#sub2" class="menu-aside__link js-popup-link">
+      <span class="menu-aside__text">Для волос</span>
+      <span class="menu-aside__arrow">
+        <svg width="6" height="12" class="svg-icon">
+          <use xlink:href="#icon-chevron"></use>
+        </svg>
+      </span>
+    </a>
+  </li>
+
+  <li class="menu-aside__item">
+    <a href="#sub3" class="menu-aside__link js-popup-link">
+      <span class="menu-aside__text">Для тела</span>
+      <span class="menu-aside__arrow">
+        <svg width="6" height="12" class="svg-icon">
+          <use xlink:href="#icon-chevron"></use>
+        </svg>
+      </span>
+    </a>
+  </li>
+
+  <li class="menu-aside__item">
+    <a href="#" class="menu-aside__link">
+      <span class="menu-aside__text">Для рук и ног</span>
+    </a>
+  </li>
+
+  <li class="menu-aside__item">
+    <a href="#" class="menu-aside__link">
+      <span class="menu-aside__text">Атмосфера</span>
+    </a>
+  </li>
+
+  <li class="menu-aside__item">
+    <a href="#" class="menu-aside__link">
+      <span class="menu-aside__text">Гигиена и здоровье</span>
+    </a>
+  </li>
+</ul>
+
+              </div>
+            </aside>
+
+            <main class="page__main">
+              <div class="breadcrumbs">
+  <a href="#" class="breadcrumbs__link">Главная</a>
+  <div class="breadcrumbs__deliver">-</div>
+  <a href="#" class="breadcrumbs__link">Каталог</a>
+  <div class="breadcrumbs__deliver">-</div>
+  <a href="#" class="breadcrumbs__link">Для волос</a>
+  <div class="breadcrumbs__deliver">-</div>
+  <div class="breadcrumbs__current">Шампунь</div>
+</div>
+
+
+              <div class="basket">
+                <div class="grid-row grid-row_mobileblock">
+                  <div class="grid-col grid-col_full">
+                    <div class="basket__item">
+                      <div class="basket-list">
+  <h4>В корзине 2 товара</h4>
+  <div class="basket-list__item js-basket-item">
+    <div class="product product_basket">
+      <div class="grid-row">
+        <div class="grid-col product__visual">
+          <a href="#" class="product__view">
+            <span class="product__bg corall"></span>
+            <span class="product__image">
+              <img src="images/product4.png" alt="">
+            </span>
+          </a>
+        </div>
+        <div class="grid-col grid-col_full">
+          <div class="basket-list__row">
+            <div class="grid-row grid-row_middle grid-row_tabletblock grid-row_mobileflex grid-row_minblock">
+              <div class="grid-col grid-col_full">
+                <a href="#" class="product__name">Evo</a>
+              </div>
+              <div class="grid-col basket-list__right">
+                <div class="product__code">артикул: 255249349204</div>
+              </div>
+            </div>
+          </div> <!-- /basket-list__row -->
+
+          <div class="basket-list__row">
+            <div class="grid-row grid-row_tabletblock grid-row_mobileflex grid-row_minblock">
+              <div class="grid-col grid-col_full">
+                <a href="#" class="product__title">Бальзам для поврежденных окрашенных волос</a>
+              </div>
+              <div class="grid-col basket-list__right">
+                <div class="basket-list__actions">
+                  <div class="grid-row grid-row_between grid-row_middle">
+                    <div class="grid-col">
+                      <div class="counter">
+                        <input class="js-counter counter__input input" name="counter" value="2">
+                      </div>
+                    </div>
+                    <div class="grid-col">
+                      <div class="js-basket-delete basket-list__delete">
+                        <svg width="15" height="19" class="svg-icon">
+                          <use xlink:href="#icon-cancel"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div> <!-- /basket-list__actions -->
+                </div>
+
+              </div>
+            </div>
+          </div> <!-- /basket-list__row -->
+
+          <div class="basket-list__row">
+            <div class="basket-list__price text-right">
+              <div class="price price_new">4 560 <span class="price__rub">₽</span></div>
+              <div class="price price_old">6 560 <span class="price__rub">₽</span></div>
+            </div>
+          </div> <!-- /basket-list__row -->
+
+          <div class="basket-list__row">
+            <div class="basket-list__details">
+              Официальный дистрибьютор в РФ
+            </div>
+          </div> <!-- /basket-list__row -->
+        </div>
+      </div>
+    </div> <!-- /product -->
+  </div>
+
+  <div class="basket-list__item js-basket-item">
+    <div class="product product_basket">
+      <div class="grid-row">
+        <div class="grid-col product__visual">
+          <a href="#" class="product__view">
+            <span class="product__bg blue-light"></span>
+            <span class="product__image">
+              <img src="images/product2-1.png" alt="">
+            </span>
+          </a>
+        </div>
+        <div class="grid-col grid-col_full">
+          <div class="basket-list__row">
+            <div class="grid-row grid-row_middle grid-row_tabletblock grid-row_mobileflex grid-row_minblock">
+              <div class="grid-col grid-col_full">
+                <a href="#" class="product__name">Evo</a>
+              </div>
+              <div class="grid-col basket-list__right">
+                <div class="product__code">артикул: 255249349204</div>
+              </div>
+            </div>
+          </div> <!-- /basket-list__row -->
+
+          <div class="basket-list__row">
+            <div class="grid-row grid-row_tabletblock grid-row_mobileflex grid-row_minblock">
+              <div class="grid-col grid-col_full">
+                <a href="#" class="product__title">Бальзам для поврежденных окрашенных волос</a>
+              </div>
+              <div class="grid-col basket-list__right">
+                <div class="basket-list__actions">
+                  <div class="grid-row grid-row_between grid-row_middle">
+                    <div class="grid-col">
+                      <div class="counter">
+                        <input class="js-counter counter__input input" name="counter" value="2">
+                      </div>
+                    </div>
+                    <div class="grid-col">
+                      <div class="js-basket-delete basket-list__delete">
+                        <svg width="15" height="19" class="svg-icon">
+                          <use xlink:href="#icon-cancel"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div> <!-- /basket-list__actions -->
+                </div>
+
+              </div>
+            </div>
+          </div> <!-- /basket-list__row -->
+
+          <div class="basket-list__row">
+            <div class="basket-list__price text-right">
+              <div class="price price_new">4 560 <span class="price__rub">₽</span></div>
+              <div class="price price_old">6 560 <span class="price__rub">₽</span></div>
+            </div>
+          </div> <!-- /basket-list__row -->
+
+          <div class="basket-list__row">
+            <div class="basket-list__details">
+              Официальный дистрибьютор в РФ
+            </div>
+          </div> <!-- /basket-list__row -->
+        </div>
+      </div>
+    </div> <!-- /product -->
+  </div>
+</div><!-- /basket-list -->
+
+                    </div>
+                  </div>
+                  <div class="grid-col basket__right">
+                    <div class="basket-aside">
+  <div class="basket-aside__top">
+    <h4>Заказ</h4>
+  </div>
+  <div class="basket-aside__item">
+    <form class="form coupon js-form-coupon">
+      <input name="coupon" placeholder="Промокод" type="text" class="input coupon__input required" data-msg="Неверный промокод">
+      <button class="button coupon__button is-disabled js-submit" type="submit">Применить</button>
+      <div class="coupon-message js-form-message">
+        <div class="coupon-message__wrapper">
+          <div class="coupon-message__text">Промокод применен</div>
+          <div class="coupon-message__icon">
+            <svg width="15" height="11" class="svg-icon">
+              <use xlink:href="#icon-check"></use>
+            </svg>
+          </div>
+        </div>
+      </div> <!-- /coupon-message -->
+    </form>
+  </div> <!-- /basket-aside__item -->
+
+  <div class="basket-aside__item">
+    <div class="basket-aside__line">
+      <div class="basket-aside__name">Товары (2)</div>
+      <div class="basket-aside__data text-right">
+        <div class="price">4 560 <span class="price__rub">₽</span></div>
+      </div>
+    </div> <!-- /basket-aside__line -->
+    <div class="basket-aside__line">
+      <div class="basket-aside__name">Скидка на товары</div>
+      <div class="basket-aside__data text-right">
+        <div class="price price_new">-250 <span class="price__rub">₽</span></div>
+      </div>
+    </div> <!-- /basket-aside__line -->
+  </div> <!-- /basket-aside__item -->
+
+  <div class="basket-aside__item basket-aside__item_total">
+    <div class="basket-aside__line">
+      <div class="basket-aside__name">К оплате</div>
+      <div class="basket-aside__data basket-aside__data_total text-right">
+        <div class="price">4 560 <span class="price__rub">₽</span></div>
+      </div>
+    </div> <!-- /basket-aside__line -->
+  </div> <!-- /basket-aside__item -->
+
+  <div class="basket-aside__item">
+    <div class="basket-aside__note">
+      *Мы доставляем по г. Самара и Самарской области бесплатно от 3 000 ₽, другим регионам — от 10 000₽
+    </div> <!-- /basket-aside__note -->
+  </div> <!-- /basket-aside__item -->
+
+  <div class="basket-aside__button">
+    <a href="#" class="button button_primary">Перейти к оформлению</a>
+  </div>
+</div>
+
+
+                  </div>
+                </div>
+              </div>
+
+              <section class="section section_pb60">
+                <div class="section__title">
+                  <h3>С этим товаром покупают</h3>
+                </div>
+                <div class="product-slider">
+  <div class="slider slider_product js-slider-product">
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="label-block">
+            <div class="label blue-sea">new</div>
+            <div class="label blue-light">ХИТ</div>
+          </div>
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product6.png" alt="">
+            </a>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <span class="price">1 250 <span class="price__rub">₽</span></span>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Длинный длинный длинный длинный длинный длинный заголовок (слово заголовок вы видите?)</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product7.png" alt="">
+            </a>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <span class="price">1 250 <span class="price__rub">₽</span></span>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product8.png" alt="">
+            </a>
+            <div class="label light-red label_discount">-17%</div>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <div class="price price_new">4 560 <span class="price__rub">₽</span></div>
+            <div class="price price_old">6 560 <span class="price__rub">₽</span></div>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="label-block">
+            <div class="label blue-light">ХИТ</div>
+          </div>
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product6.png" alt="">
+            </a>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <span class="price">1 250 <span class="price__rub">₽</span></span>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="label-block">
+            <div class="label blue-sea">new</div>
+          </div>
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product6.png" alt="">
+            </a>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <span class="price">1 250 <span class="price__rub">₽</span></span>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+  </div> <!-- /slider -->
+
+</div>
+
+
+              </section>
+
+              <section class="section">
+                <div class="section__title">
+                  <h3>Рекомендованные Товары бренда EVO</h3>
+                </div>
+                <div class="product-slider">
+  <div class="slider slider_product js-slider-product">
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="label-block">
+            <div class="label blue-sea">new</div>
+            <div class="label blue-light">ХИТ</div>
+          </div>
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product6.png" alt="">
+            </a>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <span class="price">1 250 <span class="price__rub">₽</span></span>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Длинный длинный длинный длинный длинный длинный заголовок (слово заголовок вы видите?)</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product7.png" alt="">
+            </a>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <span class="price">1 250 <span class="price__rub">₽</span></span>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product8.png" alt="">
+            </a>
+            <div class="label light-red label_discount">-17%</div>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <div class="price price_new">4 560 <span class="price__rub">₽</span></div>
+            <div class="price price_old">6 560 <span class="price__rub">₽</span></div>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="label-block">
+            <div class="label blue-light">ХИТ</div>
+          </div>
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product6.png" alt="">
+            </a>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <span class="price">1 250 <span class="price__rub">₽</span></span>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="label-block">
+            <div class="label blue-sea">new</div>
+          </div>
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product6.png" alt="">
+            </a>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <span class="price">1 250 <span class="price__rub">₽</span></span>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+  </div> <!-- /slider -->
+
+</div>
+
+
+              </section>
+            </main>
+          </div> <!-- /page -->
+        </div><!-- /content -->
+      </div>
+
+      <footer class="footer">
+  <div class="content">
+    <div class="footer__top">
+      <div class="grid-row grid-row_between grid-row_mobilewrap">
+        <div class="grid-col grid-col_mobile100">
+          <h5>Контакты</h5>
+          <div class="contacts footer__contacts">
+            <div class="contacts__item">
+              <a href="tel:+79009009090" class="contacts__link contacts__group">+7 900 900 90 90</a>
+            </div>
+            <div class="contacts__item">
+              <a href="mailto:marshop@gmail.com" class="contacts__link contacts__group">marshop@gmail.com</a>
+            </div>
+            <div class="contacts__item">
+              <div class="soc soc_wide">
+                <div class="soc__item">
+                  <a href="https://api.whatsapp.com/send?phone=749589400343" class="soc__link">
+                    <span class="soc__icon soc__icon_whatsapp">
+                      <svg width="19" height="19" class="svg-icon">
+                        <use xlink:href="#icon-whatsapp"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                <div class="soc__item">
+                  <a href="https://msng.link/o/?749589400343=tg" class="soc__link">
+                    <span class="soc__icon soc__icon_telegram">
+                      <svg width="28" height="24" class="svg-icon">
+                        <use xlink:href="#icon-telegram"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div> <!-- /grid-col -->
+
+        <div class="grid-col grid-col_mobile100">
+          <h5>Время работы</h5>
+          <div class="footer__info">
+            <p>С 9.00 до 21.00, ежедневно</p>
+            <p>приём заказов 24/7</p>
+          </div>
+        </div>  <!-- /grid-col -->
+
+        <div class="grid-col grid-col_mobile50">
+          <h5>МАГАЗИН</h5>
+          <ul class="menu-footer">
+            <li class="menu-footer__item">
+              <a href="#" class="menu-footer__link">Каталог</a>
+            </li>
+            <li class="menu-footer__item">
+              <a href="#" class="menu-footer__link">Бренды</a>
+            </li>
+            <li class="menu-footer__item">
+              <a href="#" class="menu-footer__link">O нас</a>
+            </li>
+            <li class="menu-footer__item">
+              <a href="#" class="menu-footer__link">Оплата</a>
+            </li>
+            <li class="menu-footer__item">
+              <a href="#" class="menu-footer__link">Доставка</a>
+            </li>
+          </ul>
+        </div>  <!-- /grid-col -->
+
+        <div class="grid-col grid-col_mobile50">
+          <h5>Категории</h5>
+          <ul class="menu-footer">
+            <li class="menu-footer__item">
+              <a href="#" class="menu-footer__link">Уход за лицом</a>
+            </li>
+            <li class="menu-footer__item">
+              <a href="#" class="menu-footer__link">Уход за волосами</a>
+            </li>
+            <li class="menu-footer__item">
+              <a href="#" class="menu-footer__link">Уход за телом</a>
+            </li>
+            <li class="menu-footer__item">
+              <a href="#" class="menu-footer__link">Макияж</a>
+            </li>
+            <li class="menu-footer__item">
+              <a href="#" class="menu-footer__link">Наборы</a>
+            </li>
+            <li class="menu-footer__item">
+              <a href="#" class="menu-footer__link">Аксессуары</a>
+            </li>
+            <li class="menu-footer__item">
+              <a href="#" class="menu-footer__link">Здоровье</a>
+            </li>
+            <li class="menu-footer__item">
+              <a href="#" class="menu-footer__link">Для мужчин</a>
+            </li>
+            <li class="menu-footer__item">
+              <a href="#" class="menu-footer__link">HOME</a>
+            </li>
+          </ul>
+        </div>  <!-- /grid-col -->
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="grid-row grid-row_between grid-row_wrap grid-row_middle">
+        <div class="grid-col">
+          Помоги нам стать лучше!
+        </div>
+        <div class="grid-col">
+          <a href="#" class="button button_secondary">Сообщи о проблеме</a>
+        </div>
+        <div class="grid-col grid-col_100">
+          <div class="footer-line">
+            <span class="footer__copy">© MAR SHOP 2020</span>
+            <a href="#" class="footer-line__link">Политика конфиденциальности</a>
+            <span class="footer-line__deliver">|</span>
+            <a href="#" class="footer-line__link">Пользовательское соглашение</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+    </div>
+    <div class="catalog js-catalog">
+  <div class="catalog__wrapper">
+    <div class="content">
+
+      <div class="grid-row grid-row_tabletcolumn">
+        <div class="grid-col grid-col_75 grid-col_desktop70 grid-col_tablet100">
+          <h3 class="catalog__title">Каталог</h3>
+          <div class="catalog__menu">
+            <div class="catalog__col catalog__col_first">
+              <ul class="menu-catalog">
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link js-catalog-link" data-target='level-2-1'>
+                    <span class="menu-catalog__text">Новинки</span>
+                    <span class="menu-catalog__arrow">
+                      <svg width="6" height="12" class="svg-icon">
+                        <use xlink:href="#icon-chevron"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link menu-catalog__link_special js-catalog-link js-catalog-link2" data-target='level-2-2'>
+                    <span class="menu-catalog__text">Спецпрограмма</span>
+                    <span class="menu-catalog__arrow">
+                      <svg width="6" height="12" class="svg-icon">
+                        <use xlink:href="#icon-chevron"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link js-catalog-link" data-target='level-2-3'>
+                    <span class="menu-catalog__text">Бестселлеры</span>
+                    <span class="menu-catalog__arrow">
+                      <svg width="6" height="12" class="svg-icon">
+                        <use xlink:href="#icon-chevron"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link js-catalog-link" data-target='level-2-4'>
+                    <span class="menu-catalog__text">Для лица</span>
+                    <span class="menu-catalog__arrow">
+                      <svg width="6" height="12" class="svg-icon">
+                        <use xlink:href="#icon-chevron"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link js-catalog-link" data-target='level-2-1'>
+                    <span class="menu-catalog__text">Для волос</span>
+                    <span class="menu-catalog__arrow">
+                      <svg width="6" height="12" class="svg-icon">
+                        <use xlink:href="#icon-chevron"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link js-catalog-link" data-target='level-2-1'>
+                    <span class="menu-catalog__text">Для тела</span>
+                    <span class="menu-catalog__arrow">
+                      <svg width="6" height="12" class="svg-icon">
+                        <use xlink:href="#icon-chevron"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link js-catalog-link" data-target='level-2-1'>
+                    <span class="menu-catalog__text">Для рук и ног</span>
+                    <span class="menu-catalog__arrow">
+                      <svg width="6" height="12" class="svg-icon">
+                        <use xlink:href="#icon-chevron"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link js-catalog-link" data-target='level-2-1'>
+                    <span class="menu-catalog__text">Атмосфера</span>
+                    <span class="menu-catalog__arrow">
+                      <svg width="6" height="12" class="svg-icon">
+                        <use xlink:href="#icon-chevron"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link js-catalog-link" data-target='level-2-1'>
+                    <span class="menu-catalog__text">Гигиена и здоровье</span>
+                    <span class="menu-catalog__arrow">
+                      <svg width="6" height="12" class="svg-icon">
+                        <use xlink:href="#icon-chevron"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="catalog__col catalog__col_second js-catalog-level" data-level='level-2-1'>
+              <div class="mobile-show catalog-back">
+                <div class="catalog-back__link js-catalog-back">
+                  <div class="catalog-back__arrow">
+                    <svg width="6" height="12" class="svg-icon">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </div>
+                  <div class="catalog-back__text">Для волос</div>
+                </div>
+              </div> <!-- /catalog-back -->
+              <ul class="menu-catalog">
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link js-catalog-link2" data-target='level-3-1'>
+                    <span class="menu-catalog__text">все товары категории</span>
+                    <span class="menu-catalog__arrow">
+                      <svg width="6" height="12" class="svg-icon">
+                        <use xlink:href="#icon-chevron"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link js-catalog-link2" data-target='level-3-2'>
+                    <span class="menu-catalog__text">новинки</span>
+                    <span class="menu-catalog__arrow">
+                      <svg width="6" height="12" class="svg-icon">
+                        <use xlink:href="#icon-chevron"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link">
+                    <span class="menu-catalog__text">шампунь</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="catalog__col catalog__col_second catalog__col_full js-catalog-level" data-level='level-2-2'>
+              <div class="mobile-show catalog-back">
+                <div class="catalog-back__link js-catalog-back">
+                  <div class="catalog-back__arrow">
+                    <svg width="6" height="12" class="svg-icon">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </div>
+                  <div class="catalog-back__text">Для волос</div>
+                </div>
+              </div> <!-- /catalog-back -->
+              <div class="catalog__banner">
+                <img src="images/action1.png" alt="">
+              </div>
+              <!--<a class="action" href="#">
+                <span class="action__image">
+                  <img src="../images/action1.png" alt="">
+                  <span class="action__discount">до −20 %</span>
+                </span>
+                <span class="action__name">на продукты серии Caviar от Alterna</span>
+                <span class="action__date">c 1 по 15 мая</span>
+              </a>-->
+            </div>
+
+            <div class="catalog__col catalog__col_second catalog__col_full js-catalog-level" data-level='level-2-3'>
+              <div class="mobile-show catalog-back">
+                <div class="catalog-back__link js-catalog-back">
+                  <div class="catalog-back__arrow">
+                    <svg width="6" height="12" class="svg-icon">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </div>
+                  <div class="catalog-back__text">Для волос</div>
+                </div>
+              </div> <!-- /catalog-back -->
+              <div class="catalog__banner">
+                <img src="images/product2-1.png" alt="">
+              </div>
+             <!-- <a href="#" class="card card_catalog">
+                <span class="card__bg light-lilac">
+                  <span class="card__title">evo</span>
+                    <span class="card__describe">Набор по уходу за поврежденными вол…</span>
+                    <span class="card__note">Шампунь, кондиционер, щетка для волос</span>
+                  <span class="card__image">
+                    <img src="images/product2-1.png" alt="product">
+                  </span>
+                </span>
+              </a>-->
+            </div>
+
+            <div class="catalog__col catalog__col_second js-catalog-level" data-level='level-2-4'>
+              <div class="mobile-show catalog-back">
+                <div class="catalog-back__link js-catalog-back">
+                  <div class="catalog-back__arrow">
+                    <svg width="6" height="12" class="svg-icon">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </div>
+                  <div class="catalog-back__text">Для волос</div>
+                </div>
+              </div> <!-- /catalog-back -->
+              <ul class="menu-catalog">
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link js-catalog-link2" data-target='level-3-3'>
+                    <span class="menu-catalog__text">все товары категории</span>
+                    <span class="menu-catalog__arrow">
+                      <svg width="6" height="12" class="svg-icon">
+                        <use xlink:href="#icon-chevron"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link js-catalog-link2" data-target='level-3-2'>
+                    <span class="menu-catalog__text">новинки</span>
+                    <span class="menu-catalog__arrow">
+                      <svg width="6" height="12" class="svg-icon">
+                        <use xlink:href="#icon-chevron"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link">
+                    <span class="menu-catalog__text">шампунь</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="catalog__col catalog__col_third js-catalog-level2" data-level='level-3-1'>
+              <div class="mobile-show catalog-back">
+                <div class="catalog-back__link js-catalog-back2">
+                  <div class="catalog-back__arrow">
+                    <svg width="6" height="12" class="svg-icon">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </div>
+                  <div class="catalog-back__text">Уход для волос</div>
+                </div>
+              </div> <!-- /catalog-back -->
+              <ul class="menu-catalog">
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link">
+                    <span class="menu-catalog__text">скрабы</span>
+                  </a>
+                </li>
+
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link">
+                    <span class="menu-catalog__text">сыворотки</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="catalog__col catalog__col_third js-catalog-level2" data-level='level-3-2'>
+              <div class="mobile-show catalog-back">
+                <div class="catalog-back__link js-catalog-back2">
+                  <div class="catalog-back__arrow">
+                    <svg width="6" height="12" class="svg-icon">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </div>
+                  <div class="catalog-back__text">Уход для волос</div>
+                </div>
+              </div> <!-- /catalog-back -->
+              <ul class="menu-catalog">
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link">
+                    <span class="menu-catalog__text">скрабы2</span>
+                  </a>
+                </li>
+
+                <li class="menu-catalog__item">
+                  <a href="#" class="menu-catalog__link">
+                    <span class="menu-catalog__text">сыворотки</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="catalog__col catalog__col_third catalog__col_full js-catalog-level2" data-level='level-3-3'>
+              <div class="mobile-show catalog-back">
+                <div class="catalog-back__link js-catalog-back2">
+                  <div class="catalog-back__arrow">
+                    <svg width="6" height="12" class="svg-icon">
+                      <use xlink:href="#icon-chevron"></use>
+                    </svg>
+                  </div>
+                  <div class="catalog-back__text">Уход для волос</div>
+                </div>
+              </div> <!-- /catalog-back -->
+              <div class="catalog__banner">
+                <img src="images/banner.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-col grid-col_25 grid-col_tablet100">
+          <div class="tablet-show">
+            <ul class="menu-top">
+              <li class="menu-top__item">
+                <a href="#" class="menu-top__link">Бренды</a>
+              </li>
+              <li class="menu-top__item">
+                <a href="#" class="menu-top__link">Контакты</a>
+              </li>
+              <li class="menu-top__item">
+                <a href="#" class="menu-top__link">Оплата</a>
+              </li>
+              <li class="menu-top__item">
+                <a href="#" class="menu-top__link">Доставка</a>
+              </li>
+            </ul>
+          </div>
+          <div class="catalog-aside">
+            <div class="grid-wrap">
+              <div class="grid-wrap__top">
+                <div class="catalog-aside__content">
+                  <div class="catalog-aside__top">
+                    <div class="catalog__close js-catalog-close">
+                      <svg width="23" height="26" class="svg-icon">
+                        <use xlink:href="#icon-close"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="catalog-aside__logo mobile-hidden">
+                    <a href="/" class="logo">
+                      <img src="css/icons/logo.svg" alt="">
+                    </a>
+                  </div>
+
+                  <div class="catalog-aside__contacts contacts">
+                    <div class="contacts__item">
+                      <a href="tel:+749589400343" class="contacts__link contacts__group">
+                        <span class="contacts__icon mobile-hidden">
+                          <svg width="19" height="19" class="svg-icon">
+                            <use xlink:href="#icon-phone"></use>
+                          </svg>
+                        </span>
+                        <span class="contacts__number">+ 7 495 894 003 43</span>
+                      </a>
+                    </div>
+                    <div class="contacts__item mobile-hidden">
+                      <a href="https://api.whatsapp.com/send?phone=749589400343" class="contacts__link contacts__group">
+                        <span class="contacts__icon">
+                          <svg width="19" height="19" class="svg-icon">
+                            <use xlink:href="#icon-whatsapp"></use>
+                          </svg>
+                        </span>
+                        <span class="contacts__number">+ 7 495 894 003 43</span>
+                      </a>
+                    </div>
+                    <div class="contacts__item mobile-hidden">
+                      <p>Адрес самовывоза:</p>
+                      <p>г. Москва,</p>
+                      <p>Орешковый путь 66, стр. 9</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-aside__bottom">
+                <div class="soc">
+                  <div class="soc__item">
+                    <a href="#" target="_blank" class="soc__link">
+                      <span class="soc__icon soc__icon_facebook">
+                        <svg width="20" height="20" class="svg-icon">
+                          <use xlink:href="#icon-facebook"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+
+                  <div class="soc__item">
+                    <a href="#" target="_blank" class="soc__link">
+                      <span class="soc__icon soc__icon_instagram">
+                        <svg width="20" height="20" class="svg-icon">
+                          <use xlink:href="#icon-instagram"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+
+                  <div class="soc__item">
+                    <a href="#" target="_blank" class="soc__link">
+                      <span class="soc__icon soc__icon_youtube">
+                        <svg width="20" height="16" class="svg-icon">
+                          <use xlink:href="#icon-youtube"></use>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+
+                </div> <!-- /soc -->
+              </div><!-- /catalog-aside__bottom -->
+            </div>
+          </div>
+        </div>  <!-- /catalog-aside -->
+      </div>
+    </div>
+  </div> <!-- /catalog__wrapper -->
+</div>
+
+
+    <div class="popup-block mfp-hide" id="filter">
+  <div class="popup-block__wrapper">
+    <div class="popup-block__top">
+      <a class="filter-link js-popup-close" href="#">
+        <span class="filter-link__arrow">
+          <svg width="6" height="12" class="svg-icon">
+            <use xlink:href="#icon-chevron-left"></use>
+          </svg>
+        </span>
+        <span class="filter-link__text">Фильтры</span>
+      </a>
+
+      <div class="filter__clear">Очистить</div>
+    </div> <!-- /popup-block__top -->
+
+    <div class="popup-block__content">
+      <div class="popup-block__item">
+        <a href="#filter-use" class="filter-link js-popup-link">
+          <span class="filter-link__text">Цена</span>
+          <span class="filter-link__arrow">
+            <svg width="6" height="12" class="svg-icon">
+              <use xlink:href="#icon-chevron"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="popup-block__item">
+        <a href="#filter-use" class="filter-link js-popup-link">
+          <span class="filter-link__text">Цвет</span>
+          <span class="filter-link__arrow">
+            <svg width="6" height="12" class="svg-icon">
+              <use xlink:href="#icon-chevron"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="popup-block__item">
+        <a href="#filter-use" class="filter-link js-popup-link">
+          <span class="filter-link__text">Тип продукта</span>
+          <span class="filter-link__arrow">
+            <svg width="6" height="12" class="svg-icon">
+              <use xlink:href="#icon-chevron"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="popup-block__item">
+        <a href="#filter-use" class="filter-link js-popup-link">
+          <span class="filter-link__text">Назначение</span>
+          <span class="filter-link__arrow">
+            <svg width="6" height="12" class="svg-icon">
+              <use xlink:href="#icon-chevron"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="popup-block__item">
+        <a href="#filter-use" class="filter-link js-popup-link">
+          <span class="filter-link__text">Для кого</span>
+          <span class="filter-link__arrow">
+            <svg width="6" height="12" class="svg-icon">
+              <use xlink:href="#icon-chevron"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="popup-block__item">
+        <a href="#filter-use" class="filter-link js-popup-link">
+          <span class="filter-link__text">Бренд</span>
+          <span class="filter-link__arrow">
+            <svg width="6" height="12" class="svg-icon">
+              <use xlink:href="#icon-chevron"></use>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <div class="popup-block__item">
+        <label class="checkbox">
+          <input name="availability" type="checkbox">
+          <span class="checkbox__wrapper">
+            <span class="checkbox__icon">
+              <svg width="15" height="11" class="svg-icon">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="checkbox__text">В наличии</span>
+          </span>
+        </label>
+      </div>
+    </div> <!-- /popup-block__content -->
+
+    <div class="popup-block__bottom">
+      <a href="#" class="button button_primary js-popup-close">Показать</a>
+    </div> <!-- /popup-block__bottom -->
+  </div>
+</div>
+
+<div class="popup-block mfp-hide" id="filter-use">
+  <div class="popup-block__wrapper">
+    <div class="popup-block__top">
+      <a class="filter-link js-popup-link" href="#filter">
+        <span class="filter-link__arrow">
+          <svg width="6" height="12" class="svg-icon">
+            <use xlink:href="#icon-chevron-left"></use>
+          </svg>
+        </span>
+        <span class="filter-link__text">Назначение</span>
+      </a>
+
+      <div class="filter__clear">Очистить</div>
+    </div> <!-- /popup-block__top -->
+
+    <div class="popup-block__content">
+      <div class="popup-block__item">
+        <label class="checkbox">
+          <input name="1" type="checkbox">
+          <span class="checkbox__wrapper">
+            <span class="checkbox__icon">
+              <svg width="15" height="11" class="svg-icon">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="checkbox__text">Сухие волосы</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="popup-block__item">
+        <label class="checkbox">
+          <input name="2" type="checkbox">
+          <span class="checkbox__wrapper">
+            <span class="checkbox__icon">
+              <svg width="15" height="11" class="svg-icon">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="checkbox__text">Ломкие волосы</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="popup-block__item">
+        <label class="checkbox">
+          <input name="3" type="checkbox">
+          <span class="checkbox__wrapper">
+            <span class="checkbox__icon">
+              <svg width="15" height="11" class="svg-icon">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="checkbox__text">Жирные волосы</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="popup-block__item">
+        <label class="checkbox">
+          <input name="4" type="checkbox">
+          <span class="checkbox__wrapper">
+            <span class="checkbox__icon">
+              <svg width="15" height="11" class="svg-icon">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="checkbox__text">Нормальные волосы</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="popup-block__item">
+        <label class="checkbox">
+          <input name="5" type="checkbox">
+          <span class="checkbox__wrapper">
+            <span class="checkbox__icon">
+              <svg width="15" height="11" class="svg-icon">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </span>
+            <span class="checkbox__text">Окрашенные волосы</span>
+          </span>
+        </label>
+      </div>
+    </div> <!-- /popup-block__content -->
+
+    <div class="popup-block__bottom">
+      <a href="#" class="button button_primary js-popup-close">Показать (16)</a>
+    </div> <!-- /popup-block__bottom -->
+  </div>
+</div>
+
+<div class="popup-block mfp-hide" id="sorting">
+  <div class="popup-block__wrapper">
+    <div class="popup-block__top">
+      <a class="filter-link js-popup-close" href="#">
+        <span class="filter-link__arrow">
+          <svg width="6" height="12" class="svg-icon">
+            <use xlink:href="#icon-chevron-left"></use>
+          </svg>
+        </span>
+        <span class="filter-link__text">Сортировка</span>
+      </a>
+
+      <div class="filter__clear">Очистить</div>
+    </div> <!-- /popup-block__top -->
+
+    <div class="popup-block__content">
+      <div class="popup-block__item">
+        <label class="radio">
+          <input name="choice" type="radio" value="increase">
+          <span class="radio__wrapper">
+            <span class="radio__icon"></span>
+            <span class="radio__text">по возрастанию цены</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="popup-block__item">
+        <label class="radio">
+          <input name="choice" type="radio" value="decrease">
+          <span class="radio__wrapper">
+            <span class="radio__icon"></span>
+            <span class="radio__text">по убыванию цены</span>
+          </span>
+        </label>
+      </div>
+
+      <div class="popup-block__item">
+        <label class="radio">
+          <input name="choice" type="radio" value="review">
+          <span class="radio__wrapper">
+            <span class="radio__icon"></span>
+            <span class="radio__text">по количеству отзывов</span>
+          </span>
+        </label>
+      </div>
+    </div> <!-- /popup-block__content -->
+
+    <div class="popup-block__bottom">
+      <a href="#" class="button button_primary js-popup-close">Показать</a>
+    </div> <!-- /popup-block__bottom -->
+  </div>
+</div>
+
+<div class="popup-block mfp-hide" id="property">
+  <div class="popup__close js-popup-close">
+    <svg width="23" height="26" class="svg-icon">
+      <use xlink:href="#icon-close"></use>
+    </svg>
+  </div>
+  <div class="popup-block__wrapper">
+    <div class="popup-block__title">Свойства</div>
+    <div class="tabs">
+  <div class="tabs-menu">
+    <div class="tabs-menu__item">
+      <div class="tabs-menu__link js-tabs-link is-active" data-link='brief'>Коротко о товаре</div>
+    </div>
+    <div class="tabs-menu__item">
+      <div class="tabs-menu__link js-tabs-link" data-link='use'>Применение</div>
+    </div>
+    <div class="tabs-menu__item">
+      <div class="tabs-menu__link js-tabs-link" data-link='structure'>Состав</div>
+    </div>
+  </div><!-- /tabs-menu -->
+  <div class="tabs-block js-tabs-block" data-block='brief'>
+    <ul class="list">
+      <li>Для всех типов волос</li>
+      <li>Для ломких, тонких и поврежденных, защита от внешних факторов</li>
+      <li>Не содержит парабенов</li>
+    </ul>
+    <div class="tabs__note">*Внешний вид товаров и/или упаковки может быть изменён изготовителем и отличаться от изображенных в интернет-магазине Mar shop</div>
+  </div> <!-- /tabs-block -->
+  <div class="tabs-block js-tabs-block hidden" data-block='use'>
+    <ul class="list">
+      <li>Намочите волосы</li>
+      <li>Выдавите небольшое количество шампуня на ладонь и нанесите на влажные волосы</li>
+      <li>Распределите шампунь равномерно и затем смойте водой</li>
+    </ul>
+  </div> <!-- /tabs-block -->
+  <div class="tabs-block js-tabs-block hidden" data-block='structure'>
+    <ul class="list">
+      <li>Для всех типов волос</li>
+      <li>Для ломких, тонких и поврежденных, защита от внешних факторов</li>
+      <li>Не содержит парабенов</li>
+    </ul>
+  </div> <!-- /tabs-block -->
+</div>
+
+
+  </div>
+</div>
+
+<div class="popup-block popup-block_large mfp-hide" id="basket-empty">
+  <div class="popup__close popup__close_right js-popup-close">
+    <svg width="48" height="48" class="svg-icon">
+      <use xlink:href="#icon-delete"></use>
+    </svg>
+  </div>
+  <div class="popup-block__wrapper popup-block__wrapper_middle">
+    <h2>В корзине пока ничего нет</h2>
+    <div class="popup-block__button">
+      <a href="#" class="button button_primary js-popup-close">Начать покупки -></a>
+    </div> <!-- /popup-block__bottom -->
+  </div>
+</div>
+
+<div class="popup-layout mfp-hide" id="add-basket">
+  <div class="popup-layout__block">
+    <div class="popup__close popup__close_right js-popup-close">
+      <svg width="48" height="48" class="svg-icon">
+        <use xlink:href="#icon-delete"></use>
+      </svg>
+    </div>
+    <div class="product product_added">
+  <div class="grid-row grid-row_middle">
+    <div class="grid-col product__visual">
+      <a href="#" class="product__view">
+        <span class="product__bg corall"></span>
+        <span class="product__image">
+          <img src="images/product4.png" alt="">
+        </span>
+      </a>
+    </div>
+    <div class="grid-col grid-col_full">
+      <div class="grid-wrap">
+        <div class="grid-wrap__top">
+          <div class="popup-layout__title">Товар добавлен в корзину!</div>
+          <div class="mobile-hidden">
+            <a class="product__name" href="#">Evo</a>
+            <div class="product-line">
+              <div class="grid-row">
+                <div class="grid-col grid-col_full">
+                  <a class="product__title" href="#">Шампунь- бальзам для поврежденных окрашенных волос для ежедневного использования</a>
+                </div>
+                <div class="grid-col">
+                  <div class="counter">
+                    <input class="js-counter counter__input input" name="counter" value="2">
+                  </div>
+                  <div class="product__price">
+                    <span class="price">1 450 <span class="price__rub">₽</span></span>/шт.
+                  </div>
+                </div>
+                <div class="grid-col">
+                  <div class="product__sum">
+                    <span class="price">2 900 <span class="price__rub">₽</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- /grid-wrap__top -->
+
+        <div class="product__bottom mobile-hidden">
+          <div class="grid-row grid-row_between grid-row_middle grid-row_wrap">
+            <div class="grid-col">
+              <div class="product-info">
+                <a href="#" class="product-info__link">В корзине 2 товара</a> на сумму 2 900 р
+              </div>
+            </div>
+            <div class="grid-col">
+              <div class="product__button">
+                <a href="#" class="button button_secondary js-popup-close">Продолжить покупки</a>
+                <a href="#" class="button button_primary">Перейти в корзину</a>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /product__bottom -->
+
+        <div class="product__bottom mobile-show">
+          <a href="#" class="button button_primary">Перейти</a>
+        </div> <!-- /product__bottom -->
+      </div>
+    </div>
+  </div>
+</div> <!-- /product -->
+  </div> <!-- /popup-layout__block -->
+
+  <div class="popup-layout__block">
+    <div class="popup-layout__title text-center">Посмотрите на эти товары со скидками</div>
+    <div class="product-slider">
+  <div class="slider slider_product js-slider-popup">
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="label-block">
+            <div class="label blue-sea">new</div>
+            <div class="label blue-light">ХИТ</div>
+          </div>
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product6.png" alt="">
+            </a>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <span class="price">1 250 <span class="price__rub">₽</span></span>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product7.png" alt="">
+            </a>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <span class="price">1 250 <span class="price__rub">₽</span></span>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product8.png" alt="">
+            </a>
+            <div class="label light-red label_discount">-17%</div>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <div class="price price_new">4 560 <span class="price__rub">₽</span></div>
+            <div class="price price_old">6 560 <span class="price__rub">₽</span></div>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="label-block">
+            <div class="label blue-light">ХИТ</div>
+          </div>
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product6.png" alt="">
+            </a>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <span class="price">1 250 <span class="price__rub">₽</span></span>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="label-block">
+            <div class="label blue-sea">new</div>
+          </div>
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product6.png" alt="">
+            </a>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <span class="price">1 250 <span class="price__rub">₽</span></span>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+  </div> <!-- /slider -->
+
+</div>
+
+
+  </div> <!-- /popup-layout__block -->
+</div>  <!-- /popup-layout -->
+
+<div class="popup-layout mfp-hide" id="add-basket2">
+  <div class="popup-layout__block">
+    <div class="popup__close popup__close_right js-popup-close">
+      <svg width="48" height="48" class="svg-icon">
+        <use xlink:href="#icon-delete"></use>
+      </svg>
+    </div>
+    <div class="product product_added">
+  <div class="grid-row grid-row_middle">
+    <div class="grid-col product__visual">
+      <a href="#" class="product__view">
+        <span class="product__bg corall"></span>
+        <span class="product__image">
+          <img src="images/product4.png" alt="">
+        </span>
+      </a>
+    </div>
+    <div class="grid-col grid-col_full">
+      <div class="grid-wrap">
+        <div class="grid-wrap__top">
+          <div class="popup-layout__title">Товар добавлен в корзину!</div>
+          <div class="mobile-hidden">
+            <a class="product__name" href="#">Evo</a>
+            <div class="product-line">
+              <div class="grid-row">
+                <div class="grid-col grid-col_full">
+                  <a class="product__title" href="#">Шампунь- бальзам для поврежденных окрашенных волос для ежедневного использования</a>
+                </div>
+                <div class="grid-col">
+                  <div class="counter">
+                    <input class="js-counter counter__input input" name="counter" value="2">
+                  </div>
+                  <div class="product__price">
+                    <span class="price">1 450 <span class="price__rub">₽</span></span>/шт.
+                  </div>
+                </div>
+                <div class="grid-col">
+                  <div class="product__sum">
+                    <span class="price">2 900 <span class="price__rub">₽</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- /grid-wrap__top -->
+
+        <div class="product__bottom mobile-hidden">
+          <div class="grid-row grid-row_between grid-row_middle grid-row_wrap">
+            <div class="grid-col">
+              <div class="product-info">
+                <a href="#" class="product-info__link">В корзине 2 товара</a> на сумму 2 900 р
+              </div>
+            </div>
+            <div class="grid-col">
+              <div class="product__button">
+                <a href="#" class="button button_secondary js-popup-close">Продолжить покупки</a>
+                <a href="#" class="button button_primary">Перейти в корзину</a>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /product__bottom -->
+
+        <div class="product__bottom mobile-show">
+          <a href="#" class="button button_primary">Перейти</a>
+        </div> <!-- /product__bottom -->
+      </div>
+    </div>
+  </div>
+</div> <!-- /product -->
+  </div> <!-- /popup-layout__block -->
+
+  <div class="popup-layout__block">
+    <div class="label label_present">
+      <img src="images/present.png" alt="">
+    </div>
+    <div class="product product_added">
+      <div class="grid-row grid-row_middle">
+        <div class="grid-col product__visual">
+          <a href="#" class="product__view">
+            <span class="product__bg blue"></span>
+            <span class="product__image">
+              <img src="images/product1.png" alt="">
+            </span>
+          </a>
+        </div>
+        <div class="grid-col grid-col_full">
+          <div class="grid-wrap">
+            <div class="grid-wrap__top">
+              <div class="popup-layout__title">Поздравляем, вы получили подарок!</div>
+              <div class="mobile-hidden">
+                <a class="product__name" href="#">ALTERNA</a>
+                <a class="product__title" href="#">Сухой шампунь «Bamboo Style» с экстрактом манго и маслом кокоса</a>
+              </div>
+            </div> <!-- /grid-wrap__top -->
+
+            <div class="product__bottom">
+              <div class="product-info">
+                Вы заказали на сумму больше 3000 ₽ , ваш подарок уже <a href="#" class="product-info__link">в корзине</a>
+              </div>
+            </div> <!-- /product__bottom -->
+          </div>
+        </div>
+      </div>
+    </div> <!-- /product -->
+  </div> <!-- /popup-layout__block -->
+</div>  <!-- /popup-layout -->
+
+<div class="popup-layout mfp-hide" id="add-basket3">
+    <div class="popup-layout__block">
+    <div class="popup__close popup__close_right js-popup-close">
+      <svg width="48" height="48" class="svg-icon">
+        <use xlink:href="#icon-delete"></use>
+      </svg>
+    </div>
+    <div class="product product_added">
+  <div class="grid-row grid-row_middle">
+    <div class="grid-col product__visual">
+      <a href="#" class="product__view">
+        <span class="product__bg corall"></span>
+        <span class="product__image">
+          <img src="images/product4.png" alt="">
+        </span>
+      </a>
+    </div>
+    <div class="grid-col grid-col_full">
+      <div class="grid-wrap">
+        <div class="grid-wrap__top">
+          <div class="popup-layout__title">Товар добавлен в корзину!</div>
+          <div class="mobile-hidden">
+            <a class="product__name" href="#">Evo</a>
+            <div class="product-line">
+              <div class="grid-row">
+                <div class="grid-col grid-col_full">
+                  <a class="product__title" href="#">Шампунь- бальзам для поврежденных окрашенных волос для ежедневного использования</a>
+                </div>
+                <div class="grid-col">
+                  <div class="counter">
+                    <input class="js-counter counter__input input" name="counter" value="2">
+                  </div>
+                  <div class="product__price">
+                    <span class="price">1 450 <span class="price__rub">₽</span></span>/шт.
+                  </div>
+                </div>
+                <div class="grid-col">
+                  <div class="product__sum">
+                    <span class="price">2 900 <span class="price__rub">₽</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- /grid-wrap__top -->
+
+        <div class="product__bottom mobile-hidden">
+          <div class="grid-row grid-row_between grid-row_middle grid-row_wrap">
+            <div class="grid-col">
+              <div class="product-info">
+                <a href="#" class="product-info__link">В корзине 2 товара</a> на сумму 2 900 р
+              </div>
+            </div>
+            <div class="grid-col">
+              <div class="product__button">
+                <a href="#" class="button button_secondary js-popup-close">Продолжить покупки</a>
+                <a href="#" class="button button_primary">Перейти в корзину</a>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /product__bottom -->
+
+        <div class="product__bottom mobile-show">
+          <a href="#" class="button button_primary">Перейти</a>
+        </div> <!-- /product__bottom -->
+      </div>
+    </div>
+  </div>
+</div> <!-- /product -->
+  </div> <!-- /popup-layout__block -->
+
+  <div class="popup-layout__block">
+    <div class="label label_present">
+      <img src="images/present.png" alt="">
+    </div>
+    <div class="popup-layout__top">
+      <div class="popup-layout__title">Поздравляем, вы получили подарок!</div>
+      <div class="product-info">
+        Вы заказали на сумму больше 3000 ₽ , выберите подарок
+      </div>
+    </div>
+    <div class="present-slider">
+  <div class="slider slider_product js-slider-popup">
+    <div class="slide slide_product">
+      <div class="product product_single js-present">
+        <div class="product__wrapper">
+          <div class="product__top">
+            <div class="product__image">
+              <img src="images/product6.png" alt="">
+            </div>
+          </div> <!-- /product__top -->
+          <div class="product__name">Evo</div>
+          <div class="product__title">Бальзам для лица для мужчин «Winners»</div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single js-present">
+        <div class="product__wrapper">
+          <div class="product__top">
+            <div class="product__image">
+              <img src="images/product7.png" alt="">
+            </div>
+          </div> <!-- /product__top -->
+          <div class="product__name">Evo</div>
+          <div class="product__title">Бальзам для лица для мужчин «Winners»</div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single js-present">
+        <div class="product__wrapper">
+          <div class="product__top">
+            <div class="product__image">
+              <img src="images/product8.png" alt="">
+            </div>
+          </div> <!-- /product__top -->
+          <div class="product__name">Evo</div>
+          <div class="product__title">Бальзам для лица для мужчин «Winners»</div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single js-present">
+        <div class="product__wrapper">
+          <div class="product__top">
+            <div class="product__image">
+              <img src="images/product6.png" alt="">
+            </div>
+          </div> <!-- /product__top -->
+          <div class="product__name">Evo</div>
+          <div class="product__title">Бальзам для лица для мужчин «Winners»</div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single js-present">
+        <div class="product__wrapper">
+          <div class="product__top">
+            <div class="product__image">
+              <img src="images/product6.png" alt="">
+            </div>
+          </div> <!-- /product__top -->
+          <div class="product__name">Evo</div>
+          <div class="product__title">Бальзам для лица для мужчин «Winners»</div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+  </div> <!-- /slider -->
+</div>
+
+
+  </div> <!-- /popup-layout__block -->
+
+  <div class="popup-layout__block">
+    <div class="popup-layout__title text-center">Посмотрите на эти товары со скидками</div>
+    <div class="product-slider">
+  <div class="slider slider_product js-slider-popup">
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="label-block">
+            <div class="label blue-sea">new</div>
+            <div class="label blue-light">ХИТ</div>
+          </div>
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product6.png" alt="">
+            </a>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <span class="price">1 250 <span class="price__rub">₽</span></span>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product7.png" alt="">
+            </a>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <span class="price">1 250 <span class="price__rub">₽</span></span>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product8.png" alt="">
+            </a>
+            <div class="label light-red label_discount">-17%</div>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <div class="price price_new">4 560 <span class="price__rub">₽</span></div>
+            <div class="price price_old">6 560 <span class="price__rub">₽</span></div>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="label-block">
+            <div class="label blue-light">ХИТ</div>
+          </div>
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product6.png" alt="">
+            </a>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <span class="price">1 250 <span class="price__rub">₽</span></span>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+
+    <div class="slide slide_product">
+      <div class="product product_single">
+        <div class="product__wrapper">
+          <div class="label-block">
+            <div class="label blue-sea">new</div>
+          </div>
+          <div class="favorite js-favorite">
+            <div class="favorite__icon">
+              <svg width="26" height="23" class="svg-icon">
+                <use xlink:href="#icon-heart"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="product__top">
+            <a class="product__image" href="#">
+              <img src="images/product6.png" alt="">
+            </a>
+          </div> <!-- /product__top -->
+
+          <div class="product__price">
+            <span class="price">1 250 <span class="price__rub">₽</span></span>
+          </div>
+          <div class="product__actions">
+            <a href="#" class="review review_short">
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-half.svg" alt="">
+  </span>
+  <span class="review__item">
+    <img src="css/icons/star-empty.svg" alt="">
+  </span>
+  <span class="review__item">
+    <span class="review__link">23 отзыва</span>
+  </span>
+</a>
+
+
+          </div>
+          <a class="product__name" href="#">Evo</a>
+          <a class="product__title" href="#">Бальзам для лица для мужчин «Winners»</a>
+          <div class="product__button">
+            <a href="#" class="button button_primary">В КОРЗИНУ</a>
+          </div>
+        </div>
+      </div> <!-- /product -->
+    </div> <!-- /slide -->
+  </div> <!-- /slider -->
+
+</div>
+
+
+  </div> <!-- /popup-layout__block -->
+</div>  <!-- /popup-layout -->
+
+<div class="popup-block mfp-hide" id="sub1">
+  <div class="popup__close js-popup-close">
+    <svg width="23" height="26" class="svg-icon">
+      <use xlink:href="#icon-close"></use>
+    </svg>
+  </div>
+  <div class="popup-block__wrapper">
+    <div class="popup-block__title">Для лица</div>
+    <ul class="menu-sub">
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">шампунь</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">кондиционер</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">сухой шампунь</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">уход для волос</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">стайлинг</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">аксессуары</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">окрашивание</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">наборы</a>
+        </li>
+      </ul>
+  </div>
+</div>
+
+<div class="popup-block mfp-hide" id="sub2">
+  <div class="popup__close js-popup-close">
+    <svg width="23" height="26" class="svg-icon">
+      <use xlink:href="#icon-close"></use>
+    </svg>
+  </div>
+  <div class="popup-block__wrapper">
+    <div class="popup-block__title">Для волос</div>
+    <ul class="menu-sub">
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link is-active">шампунь</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">кондиционер</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">сухой шампунь</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">уход для волос</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">стайлинг</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">аксессуары</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">окрашивание</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">наборы</a>
+        </li>
+      </ul>
+  </div>
+</div>
+
+<div class="popup-block mfp-hide" id="sub3">
+  <div class="popup__close js-popup-close">
+    <svg width="23" height="26" class="svg-icon">
+      <use xlink:href="#icon-close"></use>
+    </svg>
+  </div>
+  <div class="popup-block__wrapper">
+    <div class="popup-block__title">Для тела</div>
+    <ul class="menu-sub">
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">шампунь</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">кондиционер</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">сухой шампунь</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">уход для волос</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">стайлинг</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">аксессуары</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">окрашивание</a>
+        </li>
+        <li class="menu-sub__item">
+          <a href="#" class="menu-sub__link">наборы</a>
+        </li>
+      </ul>
+  </div>
+</div>
+
+<div class="popup-layout popup-layout_medium mfp-hide" id="form">
+  <div class="popup-layout__block">
+    <div class="popup__close popup__close_right js-popup-close">
+      <svg width="48" height="48" class="svg-icon">
+        <use xlink:href="#icon-delete"></use>
+      </svg>
+    </div>
+    <div class="popup-form">
+      <div class="popup-form__title">Форма отзывов и предложений</div>
+      <div class="popup-form__text">Помоги нам стать лучше! Сообщи о проблеме</div>
+
+      <form class="form js-validate">
+        <div class="form__item js-validate-item">
+          <div class="form__wrapper">
+            <input name="name" type="text" class="input required" data-msg="Заполните это поле" placeholder="Имя">
+            <div class="form__icon">
+              <svg width="15" height="11" class="svg-icon">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </div>
+          </div>
+        </div>  <!-- /form__item -->
+
+        <div class="form__item js-validate-item">
+          <div class="form__wrapper">
+            <input name="email" type="email" class="input required" data-msg="Заполните это поле" data-msg-email="Введите правильный email" placeholder="E-mail">
+            <div class="form__icon">
+              <svg width="15" height="11" class="svg-icon">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </div>
+          </div>
+        </div>  <!-- /form__item -->
+
+        <div class="form__item js-validate-item">
+          <div class="form__wrapper">
+            <input name="phone" type="text" class="input js-phone required" data-msg="Заполните это поле" placeholder="Телефон">
+            <div class="form__icon">
+              <svg width="15" height="11" class="svg-icon">
+                <use xlink:href="#icon-check"></use>
+              </svg>
+            </div>
+          </div>
+        </div>  <!-- /form__item -->
+
+        <div class="form__item">
+          <textarea name="message" class="input input_text" placeholder="Комментарий"></textarea>
+        </div>
+
+        <div class="form__item">
+          <div class="file js-file">
+            <label class="file__wrapper">
+              <span class="file-button">
+                <span class="file-button__icon">
+                  <svg width="20" height="19" class="svg-icon">
+                    <use xlink:href="#icon-photo"></use>
+                  </svg>
+                </span>
+                <span class="file-button__text">Прикрепить изображение</span>
+              </span>
+              <input name="file[]" type="file" multiple="" class="file__input js-file-button">
+            </label>
+            <ul class="file-block js-file-block"></ul>
+          </div>
+        </div>
+
+        <div class="form__button">
+          <button class="button button_primary" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+
+  </div> <!-- /popup-layout__block -->
+</div>  <!-- /popup-layout -->
+    <script src="vendor/jquery-3.4.1.min.js"></script>
+<script src="vendor/slick.min.js"></script>
+<script src="vendor/jquery.magnific-popup.min.js"></script>
+<script src="vendor/select2.min.js"></script>
+<script src="vendor/jquery-ui.min.js"></script>
+<script src="vendor/jquery.validate.min.js"></script>
+<script src="vendor/jquery.maskedinput.min.js"></script>
+<script src="vendor/moment-with-locales.min.js"></script>
+<script src="vendor/bootstrap.min.js"></script>
+<script src="vendor/bootstrap-datetimepicker.min.js"></script>
+
+<script src="js/main.js"></script>
+
+
+
+
+  </body>
+</html>
+
+
