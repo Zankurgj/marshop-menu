@@ -6159,5 +6159,25 @@ p {
 .dropdown.is-selected .dropdown__counter {
   opacity: 1;
 }
-
+.popup-block__content--filter {
+  overflow-y: auto;
+  flex-shrink: unset;
+  width: 100%;
+}
+.popup-block__content {
+  overflow-y: auto;
+  flex-shrink: unset;
+  width: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .header {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .filter-link {
+    width: 100%;
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */

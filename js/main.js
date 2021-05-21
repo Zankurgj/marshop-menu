@@ -253,6 +253,18 @@ $(document).ready(function () {
       midClick: true,
       mainClass: "popup popup_left",
       removalDelay: 1000,
+      fixedContentPos: true,
+      callbacks: {
+        open: function () {
+          // When you open the
+          $("body").css("overflow", "hidden"); // window, the element
+        }, // "body" is used "overflow: hidden".
+
+        close: function () {
+          // When the window
+          $("body").css("overflow", ""); // is closed, the
+        }, // "overflow" gets the initial value.
+      },
     });
 
     $(".js-popup-button").magnificPopup({
