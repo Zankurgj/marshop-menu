@@ -6180,4 +6180,7 @@ p {
     margin: 0;
   }
 }
+.popup-block__bottom {
+  padding: 16px 0 48px 0;
+}
 /*# sourceMappingURL=main.css.map */
